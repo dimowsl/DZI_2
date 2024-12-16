@@ -27,6 +27,7 @@ namespace upr1.View
             // TODO: This line of code loads data into the 'upr1DataSet.Admin' table. You can move, or remove it, as needed.
             this.adminTableAdapter.Fill(this.upr1DataSet.Admin);
 
+
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -42,6 +43,38 @@ namespace upr1.View
         private void groupBox1_Enter(object sender, EventArgs e)
         {
 
+        }
+
+        private void adminUsersBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void upr1DataSetBindingSource1_CurrentChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void adminBindingSource_CurrentChanged(object sender, EventArgs e)
+        {
+                    }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            upr1DataSet.Admin.AddAdminRow(textBox1.Text, dateTimePicker1.Value, comboBox1.Text);
         }
     }
 }
